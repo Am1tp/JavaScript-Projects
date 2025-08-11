@@ -1,6 +1,6 @@
 let A = "this is me string" // assign string to the variable A //
 document.write(A) // 1
-window.alert(A) // 1
+// window.alert(A) // 1
 
 let Sent1 = "This is the beginning of the string", Sent2 = "and this is the end of the string"
 let y = Sent1 + " " + Sent2
@@ -18,3 +18,7 @@ document.write(Dad + " " + Famry)
 
 var x = 10
 var myExpresso = x + 5
+
+function trap_card() {
+    alert("You have activated my trap card")
+}
