@@ -10,3 +10,13 @@ function myFunky() {
     
     document.getElementById("concat").innerHTML = y;
 }
+
+function myChallengeFunc (a, b) {
+    result = a * b
+    window.alert(result)
+} 
+
+
+function changeButtonText() {
+    document.getElementById("changeTextBtn").innerHTML = "this text has been changed";
+}
