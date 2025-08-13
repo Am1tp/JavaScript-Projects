@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = "./JS/main.js" defer></script>        
+    </head>
+
+    <body>
+        <p id="Loop"></p>
+        <button onclick="Call_Loop()">Click here to execute the loop</button>
+
+        <p id="List_of_Instruments"></p>
+        <button onclick="for_Loop()">Click here</button>
+
+        <p id="Array"></p>
+        <button onclick="array_Function()">Click here for random numbers</button>
+
+        <p id="Constant"></p>
+        <button onclick="constant_function()">Click here for constant</button>
+
+        <!-- local/block scope variables -->
+        <script>
+            var X = 100
+            document.write("<br>" + X)
+            {
+                let X = 200
+                document.write("<br>" + X)
+            }
+            document.write("<br>" + X)
+
+        </script>
+
+        <!--return assignment -->
+        <p id="Return">This is some text</p>
+        <script>
+            function return_function() {
+            var x = Math.random();
+            var y = Math.random();
+            var z = x * y;
+            return z;
+            }
+
+            document.getElementById("Return").innerHTML = return_function();
+            
+        </script>
+
+        <!-- object assignment -->
+        <p id="object">What kind of car</p> 
+        <script>
+
+            let Car = {
+                make : "Ford",
+                model : "Fiesta",
+                year : "2020",
+                color: "Blue",
+                description : function() {
+                return "A " + " " + this.year + " " + this.color + " " + this.make + " " + this.model; 
+            }
+            };
+
+            document.getElementById("object").innerHTML = Car.description();
+
+        </script>
+
+        <!-- break and continue challenge-->
+         <p id="break"></p>
+
+        <script>
+            let text = "";
+
+            for (let i = 1; i <= 10; i++) { 
+                if (i % 2 === 0) {          // skip even numbers 
+                    continue; 
+                }
+
+                else if (i > 7) {    // stop loop if the number > 7
+                    break; 
+                }
+
+            text += "Number: " + i + "<br>";
+
+            };
+
+            document.getElementById("break").innerHTML = text;
+
+        </script>            
+
+    
+
+    </body>
+
+</html>
